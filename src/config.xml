@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<operator xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="FISUDA" name="ngsi-entity-filter" version="0.1.0">
+
+    <details>
+        <title>NGSI Entity filter</title>
+        <homepage>https://github.com/lets-fiware/ngsi-entity-filter-operator</homepage>
+        <authors>Kazuhito Suda &lt;wirecloud@fisuda.jp&gt;</authors>
+        <email>wirecloud@fisuda.jp</email>
+        <image></image>
+        <smartphoneimage></smartphoneimage>
+        <description>NGSI Entity filter</description>
+        <longdescription>DESCRIPTION.md</longdescription>
+        <changelog>doc/changelog.md</changelog>
+        <doc>doc/userguide.md</doc>
+        <license>MIT</license>
+        <issuetracker>https://github.com/lets-fiware/ngsi-entity-filter-operator/issues</issuetracker>
+    </details>
+
+    <requirements>
+        <!-- Add any extra requirements here -->
+        <!-- <feature name="${feature-name}" /> -->
+    </requirements>
+
+    <preferences>
+        <preference
+            name="types" type="text" label="Entity types" description="A comma separated list of Entity types to filter" default="" />
+    </preferences>
+
+    <wiring>
+      <outputendpoint name="entityOutput" type="text" label="Entites" description="Entityes filtered from the received entities" friendcode="entity"/>
+      <inputendpoint name="entityInput" type="text" label="Entities" description="Received entities will be filtered by Entity types" friendcode="entity"/>
+    </wiring>
+
+    <scripts>
+        <script src="js/main.js"/>
+    </scripts>
+
+</operator>
