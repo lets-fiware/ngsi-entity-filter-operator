@@ -182,12 +182,12 @@ module.exports = function (grunt) {
 
     grunt.registerTask('test', [
         'eslint',
-//        'karma:operator'
+        //        'karma:operator'
     ]);
 
     grunt.registerTask('ci', [
         'eslint',
-//        'karma:operatorci',
+        //        'karma:operatorci',
         'coveralls'
     ]);
 
