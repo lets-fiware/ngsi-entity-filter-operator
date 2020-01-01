@@ -1,6 +1,6 @@
 /*
- * ngsi-entity-filter
- * https://github.com/lets-fiware/ngsi-entity-filter-operator
+ * get-orion-version
+ * https://github.com/lets-fiware/get-orion-version-operator
  *
  * Copyright (c) 2019 Kazuhito Suda
  * Licensed under the MIT license.
@@ -120,9 +120,6 @@ module.exports = function (grunt) {
                     'src/js/*.js',
                     'tests/js/*Spec.js'
                 ],
-                exclude: [
-                    'src/js/main.js',
-                ],
                 frameworks: ['jasmine'],
                 reporters: ['progress', 'coverage'],
                 browsers: ['Chrome', 'Firefox'],
@@ -182,12 +179,12 @@ module.exports = function (grunt) {
 
     grunt.registerTask('test', [
         'eslint',
-        //        'karma:operator'
+        'karma:operator'
     ]);
 
     grunt.registerTask('ci', [
         'eslint',
-        //        'karma:operatorci',
+        'karma:operatorci',
         'coveralls'
     ]);
 
