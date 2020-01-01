@@ -1,5 +1,10 @@
 # NGSI Entity filter operator
 
+[![](https://nexus.lab.fiware.org/repository/raw/public/badges/chapters/visualization.svg)](https://www.fiware.org/developers/catalogue/)
+[![License: MIT](https://img.shields.io/github/license/lets-fiware/ngsi-entity-filter-operator.svg)](https://opensource.org/licenses/MIT)<br/>
+[![Build Status](https://travis-ci.org/lets-fiware/ngsi-entity-filter-operator.svg?branch=master)](https://travis-ci.org/lets-fiware/ngsi-entity-filter-operator)
+[![Coverage Status](https://coveralls.io/repos/github/lets-fiware/ngsi-entity-filter-operator/badge.svg)](https://coveralls.io/github/lets-fiware/ngsi-entity-filter-operator)
+
 The NGSI Entity filter operator is a WireCloud operator that allows you to filter entites by entity types.
 
 
