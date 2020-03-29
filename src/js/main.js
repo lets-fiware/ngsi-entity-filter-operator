@@ -17,6 +17,9 @@
                 return types.indexOf(e.type) !== -1;
             });
 
+            if (MashupPlatform.prefs.get('send_nulls') && new_entites.length == 0) {
+                new_entites = null;
+            }
             MashupPlatform.wiring.pushEvent("entityOutput", new_entites);
         }
     }
