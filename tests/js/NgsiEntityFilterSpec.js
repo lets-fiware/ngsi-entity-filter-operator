@@ -10,7 +10,8 @@
             window.MashupPlatform = new MockMP({
                 type: 'operator',
                 prefs: {
-                    'types': 'test'
+                    'types': 'test',
+                    'send_nulls': false
                 },
                 inputs: ['entityInput'],
                 outputs: ['entityOutput']
@@ -44,6 +45,15 @@
             ngsiEntityFilter([{'type': 'test'}, {'type': 'abc'}, {'type': 'xyz'}, {'type': '123'}]);
 
             expect(MashupPlatform.wiring.pushEvent).toHaveBeenCalledWith('entityOutput', []);
+        });
+
+        it("send nulls", function () {
+            MashupPlatform.prefs.set('types', '');
+            MashupPlatform.prefs.set('send_nulls', true);
+
+            ngsiEntityFilter([{'type': 'test'}, {'type': 'abc'}, {'type': 'xyz'}, {'type': '123'}]);
+
+            expect(MashupPlatform.wiring.pushEvent).toHaveBeenCalledWith('entityOutput', null);
         });
 
         it("output endoint is not connected", function () {
