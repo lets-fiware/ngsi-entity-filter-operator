@@ -1,13 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<operator xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="FISUDA" name="ngsi-entity-filter" version="0.1.1">
+<operator xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="FISUDA" name="ngsi-entity-filter" version="0.1.2">
 
     <details>
         <title>NGSI Entity filter</title>
         <homepage>https://github.com/lets-fiware/ngsi-entity-filter-operator</homepage>
         <authors>Kazuhito Suda &lt;wirecloud@fisuda.jp&gt;</authors>
         <email>wirecloud@fisuda.jp</email>
-        <image></image>
-        <smartphoneimage></smartphoneimage>
+        <image>images/catalogue.png</image>
         <description>NGSI Entity filter</description>
         <longdescription>DESCRIPTION.md</longdescription>
         <changelog>doc/changelog.md</changelog>
@@ -28,8 +27,8 @@
     </preferences>
 
     <wiring>
-      <outputendpoint name="entityOutput" type="text" label="Entites" description="Entityes filtered from the received entities" friendcode="entity"/>
-      <inputendpoint name="entityInput" type="text" label="Entities" description="Received entities will be filtered by Entity types" friendcode="entity"/>
+      <outputendpoint name="entityOutput" type="text" label="Entities" description="Entities filtered from the received entities" friendcode="entity list"/>
+      <inputendpoint name="entityInput" type="text" label="Entities" description="Received entities will be filtered by Entity types" friendcode="entity-list"/>
     </wiring>
 
     <scripts>
