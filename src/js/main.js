@@ -2,7 +2,7 @@
  * ngsi-entity-filter
  * https://github.com/lets-fiware/ngsi-entity-filter-operator
  *
- * Copyright (c) 2019,2020 Kazuhito Suda
+ * Copyright (c) 2019,2020-2023 Kazuhito Suda
  * Licensed under the MIT license.
  */
 
